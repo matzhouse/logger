@@ -9,7 +9,7 @@ It creates a logging system that passes messages over a Fan-In type channel syst
 
 ## Example
 
-```
+```go
 lg := logger.NewLogger()
 
 var message string
