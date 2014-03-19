@@ -12,13 +12,13 @@ It creates a logging system that passes messages over a Fan-In type channel syst
 ```
 lg := logger.NewLogger()
 
-	var message string
+var message string
 
-	for i := 50; i >= 0; i-- {
+for i := 50; i >= 0; i-- {
 
-		message = fmt.Sprintf("Logging, number %d", i)
+	message = fmt.Sprintf("Logging, number %d", i)
 
-		lg.Log(message)
-		time.Sleep(200 * time.Millisecond)
-	}
+	lg.Log(message)
+	time.Sleep(200 * time.Millisecond)
+}
 ```
