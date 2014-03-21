@@ -1,8 +1,13 @@
 logger
 ======
 
-A go library for logging from using channels
+A go library for logging data from anywhere using channels
 
+Every instance of logger comes back to a single channel.
+
+# Possible Uses
+Monitoring lots of go routines doing the same thing
+Single write to file from lots of outputs
 
 This library is more of a test than anything.
 It creates a logging system that passes messages over a Fan-In type channel system.
