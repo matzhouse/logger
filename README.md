@@ -27,3 +27,19 @@ for i := 50; i >= 0; i-- {
 	time.Sleep(200 * time.Millisecond)
 }
 ```
+
+## Simple visual
+
+<pre>
+write:
+node --->  logger  |---->  redis_1
+                   |---->  redis_2
+
+read:
+node_1 --|  
+         |
+         |             |---->  redis_1 (node_2 read)
+         |--> logger --|
+         |             |---->  redis_2 (node_1 read)
+node_2 --|
+</pre>
